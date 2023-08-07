@@ -14,6 +14,12 @@ int main()
     }
 
 }
+//n bit Gray code can be generated using the previous n-1 bit list of greycode
+//This can be done by creating two copy of the n-1 bit list of gray code
+//then reverse one of them
+//append 0 infront of all of the nonreversed list
+//append 1 infront of all the reversed list
+//merge the two lists togther letting the one started with 0 first      
 void GrayCode(int n, vector<string>& grayCode)
 {
     if(n == 1)
